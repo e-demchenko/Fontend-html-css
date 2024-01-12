@@ -1,0 +1,71 @@
+:root{
+--brand-color: #819B57;
+}
+/* Global section */
+ul{
+    list-style-type: none;
+}
+/* Link section */
+a{
+    text-decoration: none;
+}
+
+h1{
+    /* border: 4px solid rgb(68, 236, 146); */
+    color: #FAF4EA;
+}
+
+h1 span{
+    color:var(--brand-color);
+}
+
+.adventages-list{
+    color: #FAF4EA;
+    background-color: color:var(--brand-color); /*HEX value */
+}
+
+.section-title{
+    color:rgba(49, 38, 26, 1);
+}
+p{
+    border: 1px solid red;
+}
+.nav-class{
+    border: 5px solid yellowgreen;
+ }
+
+ #nav-id{
+    background-color: aquamarine;
+ }
+
+/* [type='button']{
+    border: 1px solid gray;
+ } */
+ .section-first-main{
+    color: rgb(215, 24, 24);
+ }
+
+ .order-call-button{
+    width: 238px;
+    height: 59px;
+    border:  2px;
+    border-radius: 8px;
+    padding: 16px, 32px ;
+
+    background-color:color:var(--brand-color) ;
+    font-size: 18px;
+    line-height: 27px;
+    font: Poppins;
+    color: #FAF4EA;
+
+ }
+ .order-call-button:hover{
+    background-color: gray;
+ }
+.nav-link{
+    color: #FAF4EA;
+}
+
+.nav-link:hover{
+    color: color:var(--brand-color);
+}

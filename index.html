@@ -3,33 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pidor-TVAR_VBLUDOK</title>
+    <title>Modern bakery</title>
+    <style>
+        h1{
+            background-color: black;
+        }
+    
+    </style>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="nav-class" id = "nav-id">
             <a href="./index.html">
                 <img src="./images/logo.svg" alt="logo Modern bakery">
             </a>
            <ul>
-                <li><a href="#trditions-section">Over traditions</a></li>
-                <li><a href="#cokers-section">Chef-cook</a></li>
-                <li><a href="#formats-section">Formats</a></li>
-                <li><a href="#contacts-section">Contacts</a></li>
+                <li><a class="nav-link" href="#trditions-section">Over traditions</a></li>
+                <li><a class="nav-link" href="#cokers-section">Chef-cook</a></li>
+                <li><a class="nav-link" href="#formats-section">Formats</a></li>
+                <li><a class="nav-link" href="#contacts-section">Contacts</a></li>
            </ul>
         </nav>
-        <button type="button">
+        <button class="order-call-button">
             Order call
         </button>
     </header>
     <main>
         <section>
             <h1>
-                Modern bakery
+                <span>Modern</span> bakery
             </h1>
         </section>
-        <section id = "trditions-section">
-            <ul>
+        <section class = "section-title" id = "trditions-section">
+            <ul class="adventages-list">
                 <li>The great one will drink to the market</li>
                 <li>Available in budget formats</li>
                 <li>The management team has been completed</li>
@@ -42,7 +49,7 @@
                 and high quality of service!</p>
             <img src="./images/baker-man.jpg" alt="baker-man">
         </section>
-        <section id = "cokers-section">
+        <section class = "section-title" id = "cokers-section">
             <h2>Our best highlights
                 chef-cook</h2>
                 <ul>
@@ -67,7 +74,7 @@
                 </ul>
         
         </section>
-        <section id = "formats-section">
+        <section class = "section-title" id = "formats-section">
             <h2>Format</h2>
             <ul>
                 <li><article>
@@ -79,10 +86,10 @@
                 </article></li>
                 <li><article>
                     <h3>Horsshoe</h3>
-                        Площа: до 25 м2
+                        <p>Площа: до 25 м2
                         Меню: найпопулярніші позиції меню
                         Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря
-                        Посадкові місця: відсутні
+                        Посадкові місця: відсутні</p>
                 </article></li>
                 <li><article>
                     <h3>Handlebar</h3>
@@ -94,7 +101,7 @@
             </ul>
     
         </section>
-        <section id = "contacts-section">
+        <section class = "section-title" id = "contacts-section">
             <h2>Come to
                 bakery lines
             </h2>
