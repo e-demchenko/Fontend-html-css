@@ -35,7 +35,10 @@
 --brand-color: #819B57;
 --brand-dark-color:#31261A;
 --brand-light-color: #FAF4EA;
-
+}
+/* Base */
+* {
+    box-sizing: border-box;
 }
 /* Global section */
 
@@ -59,12 +62,13 @@ a{
 }
 
 h1{
-    color:#1a13a0;
+    /* color:#1a13a0; */
     font-family: Poppins, sans-serif;
     font-weight: 900;
     font-size: 128px;
     text-decoration: none;
     text-align: center;
+    color: var(--brand-light-color);
 }
 
 h1 span{
