@@ -48,6 +48,11 @@ body{
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin-top: 0px;
 }
 
 address{
@@ -60,7 +65,11 @@ ul{
 a{
     text-decoration: none;
 }
-
+.hero-section{
+    padding: 272px 0;
+    
+    text-align: center;
+}
 h1{
     /* color:#1a13a0; */
     font-family: Poppins, sans-serif;
@@ -69,10 +78,35 @@ h1{
     text-decoration: none;
     text-align: center;
     color: var(--brand-light-color);
+    margin-bottom: 0;
 }
 
 h1 span{
     color:var(--brand-color);
+}
+
+.advantages-hide{
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden 
+}
+
+
+.container{
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+.section{
+    padding: 48px 0;
+}
+
+.section:nth-child(3){
+    padding-top: 96px;
 }
 
 .nav-class{
@@ -84,7 +118,7 @@ h1 span{
     height: 59px;
     border:  2px;
     border-radius: 8px;
-    padding: 16px, 32px ;
+    padding: 16px 32px ;
 
     background-color:var(--brand-color) ;
     font-weight: 600;
@@ -126,9 +160,16 @@ h1 span{
 }
 /* Chif section */
 .chef-title{
+    margin-bottom: 16px;
     font-weight: 600;
     font-size: 40px;
+    
 }
+
+.chefs-title{
+    margin-bottom: 80px;    
+}
+
 /* Forman section */
 .format-title{
     font-weight: 600;
@@ -139,10 +180,15 @@ h1 span{
     font-size: 14px;
 }
 
+.formats-title{
+    margin-bottom: 80px;    
+}
+
 
 /* Traditions section */
-.traditions-text{
-    white-space: nowrap;
+
+.traditional-title{
+    margin-bottom: 42px;
 }
 
 .uppercase{
@@ -153,6 +199,12 @@ h1 span{
 
 .traditions-text span:last-child{
     color: var(--brand-color);
+}
+
+/* Contact section */
+
+.contacts-title{
+    margin-bottom: 16px;
 }
 /* Footer */
 .address-link{
