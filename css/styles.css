@@ -60,6 +60,8 @@ address{
 }
 ul{
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 /* Link section */
 a{
@@ -85,33 +87,44 @@ h1 span{
     color:var(--brand-color);
 }
 
-.advantages-hide{
-    position:absolute;
-    left:-10000px;
-    top:auto;
-    width:1px;
-    height:1px;
-    overflow:hidden 
+header{
+    background-color: lightgray;
 }
 
 
+/* Header section */
+.header-container{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-class{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-links{
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: center;
+}
 .container{
     width: 100%;
     max-width: 1288px;
     margin: 0 auto;
     padding: 0 24px;
 }
-.section{
+/* .section{
     padding: 48px 0;
-}
+} */
 
 .section:nth-child(3){
     padding-top: 96px;
 }
-
-.nav-class{
-    border: 5px solid yellowgreen;
- }
 
  .order-call-button{
     width: 238px;
@@ -142,12 +155,30 @@ h1 span{
     color: rgb(215, 24, 24);
  }
 
-.adventages-list{
-    color: #FAF4EA;
-    background-color: var(--brand-color);
+ /* Adventages section */
+
+ .advantages-hide{
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden 
 }
 
-.adventages-items{
+ .advantages-section{
+    background-color: var(--brand-color);
+    padding: 16px 0;
+ }
+
+.adventages-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.advantages-items{
+    color: #FAF4EA;
     font-weight: 300;
     font-size: 20px;
 }
@@ -157,6 +188,43 @@ h1 span{
     font-size: 64px;
     line-height: 1.3;
     color:rgba(49, 38, 26, 1);
+}
+
+/* Traditions section */
+.tradition-section{
+    padding-top: 96px;
+}
+
+.traditions-text-sec{
+    max-width: 378px;
+}
+.tradition-container{
+    display: flex;
+    gap: 100px;
+}
+
+.traditions-text-container{
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+.traditional-title{
+    margin-bottom: 42px;
+    font-size: 64px;
+}
+
+.uppercase{
+    text-transform: uppercase;
+    color: var(--brand-color);
+    font-weight: 600;
+}
+
+/* .traditions-text span:last-child{
+    color: var(--brand-color);
+} */
+.brand-color{
+    color: var(--brand-color);
+    font-weight: 600;
 }
 /* Chif section */
 .chef-title{
@@ -185,21 +253,7 @@ h1 span{
 }
 
 
-/* Traditions section */
 
-.traditional-title{
-    margin-bottom: 42px;
-}
-
-.uppercase{
-    text-transform: uppercase;
-    /* color: var(--brand-color); */
-    font-weight: 600;
-}
-
-.traditions-text span:last-child{
-    color: var(--brand-color);
-}
 
 /* Contact section */
 

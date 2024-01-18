@@ -13,20 +13,23 @@
 <body>
     <header>
        <div class="container">
-        <nav class="nav-class" id = "nav-id">
-            <a href="./index.html">
-                <img src="./images/logo.svg" alt="logo Modern bakery">
-            </a>
-           <ul>
-                <li><a class="nav-link" href="#trditions-section">Over traditions</a></li>
-                <li><a class="nav-link" href="#cokers-section">Chef-cook</a></li>
-                <li><a class="nav-link" href="#formats-section">Formats</a></li>
-                <li><a class="nav-link" href="#contacts-section">Contacts</a></li>
-           </ul>
-        </nav>
-        <button class="order-call-button">
-            Order call
-        </button>
+        <div class="header-container">
+            <nav class="nav-class" id = "nav-id">
+                <a href="./index.html">
+                    <img src="./images/logo.svg" alt="logo Modern bakery">
+                </a>
+               <ul class="header-links">
+                    <li><a class="nav-link" href="#trditions-section">Over traditions</a></li>
+                    <li><a class="nav-link" href="#cokers-section">Chef-cook</a></li>
+                    <li><a class="nav-link" href="#formats-section">Formats</a></li>
+                    <li><a class="nav-link" href="#contacts-section">Contacts</a></li>
+               </ul>
+            </nav>
+        
+            <button class="order-call-button">
+                Order call
+            </button>
+        </div>
        </div>
     </header>
     <main>
@@ -37,7 +40,7 @@
                 </h1>
             </div>
         </section>
-        <section class="section">
+        <section class="section advantages-section">
             <div class="container">
                 <h2 class="advantages-hide">Advantages</h2>
                 <ul class="adventages-list">
@@ -47,16 +50,21 @@
                 </ul>
             </div>
         </section>
-        <section class="section" id = "traditions-section">
-            <div class="container">
-                <h2 class="traditional-title">New format of traditions</h2>
-                    <p class="traditions-text"><span class="uppercase">shop bakery</span> — This is a bakery that has taken the best of everything and preserved the taste of traditional baked goods and the naturalness of the ingredients.</p>
+        <section class="section tradition-section container" id = "traditions-section">
+            <div class=" tradition-container">
+                <div class="tradition-text-container">
+                    <h2 class="traditional-title">New format of traditions</h2>
+                
+                    <p class="traditions-text"><span class="uppercase">shop bakery</span> This is a bakery that has taken the best of everything and preserved the taste of traditional baked goods and the naturalness of the ingredients.</p>
 
-                    <p class="traditions-text">We act as the most common measures— 
-                    <span>5 minutes and the order is ready</span>. 
+                    <p class="traditions-text-sec">We act as the most common measures — 
+                    <span class="brand-color">5 minutes and the order is ready</span>. 
                     And our bakeries have a stylish design
                     and high quality of service!</p>
-                <img src="./images/baker-man.jpg" alt="baker-man">
+                </div>
+                <div class="tradition-img">
+                    <img src="./images/baker-man.jpg" alt="baker-man">
+                </div>
             </div>
         </section>
         <section  class="section" id = "cokers-section">
