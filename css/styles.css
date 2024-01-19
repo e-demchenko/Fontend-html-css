@@ -1,4 +1,4 @@
-/* qreuhwkgsf */
+
 @font-face {
     font-display: swap; 
     font-family: 'Poppins';
@@ -67,11 +67,7 @@ ul{
 a{
     text-decoration: none;
 }
-.hero-section{
-    padding: 272px 0;
-    
-    text-align: center;
-}
+
 h1{
     /* color:#1a13a0; */
     font-family: Poppins, sans-serif;
@@ -91,8 +87,12 @@ header{
     background-color: lightgray;
 }
 
-
 /* Header section */
+.hero-section{
+    padding: 272px 0;  
+    text-align: center;
+}
+
 .header-container{
     display: flex;
     align-items: center;
@@ -112,15 +112,16 @@ header{
     flex-grow: 1;
     justify-content: center;
 }
+
 .container{
     width: 100%;
     max-width: 1288px;
     margin: 0 auto;
     padding: 0 24px;
 }
-/* .section{
+.section{
     padding: 48px 0;
-} */
+}
 
 .section:nth-child(3){
     padding-top: 96px;
@@ -151,9 +152,9 @@ header{
     font-weight: 600;
 }
 
- .section-first-main{
+ /* .section-first-main{
     color: rgb(215, 24, 24);
- }
+ } */
 
  /* Adventages section */
 
@@ -196,18 +197,22 @@ header{
 }
 
 .traditions-text-sec{
-    max-width: 378px;
+     max-width: 378px; 
 }
+
 .tradition-container{
     display: flex;
-    gap: 100px;
+    justify-content: space-between;
+    gap: 40px;
 }
 
 .traditions-text-container{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    gap: 42px;
+    gap: 42px; */
+    max-width:710px;
 }
+
 .traditional-title{
     margin-bottom: 42px;
     font-size: 64px;
@@ -219,9 +224,6 @@ header{
     font-weight: 600;
 }
 
-/* .traditions-text span:last-child{
-    color: var(--brand-color);
-} */
 .brand-color{
     color: var(--brand-color);
     font-weight: 600;
@@ -231,7 +233,6 @@ header{
     margin-bottom: 16px;
     font-weight: 600;
     font-size: 40px;
-    
 }
 
 .chefs-title{
@@ -239,6 +240,20 @@ header{
 }
 
 /* Forman section */
+.format-card{
+    border: 1px solid var(--brand-dark-color);
+    border-radius: 16px;
+    padding: 24px;
+    max-width: 349px;
+    height: 444px;
+}
+
+.formats-list{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
 .format-title{
     font-weight: 600;
     font-size: 24px;
@@ -252,6 +267,9 @@ header{
     margin-bottom: 80px;    
 }
 
+.formay-items{
+    flex-basis: calc((100%-40px)/3);
+}
 
 
 
