@@ -206,10 +206,10 @@ header{
     gap: 40px;
 }
 
-.traditions-text-container{
-    /* display: flex;
+.tradition-text-container{
+    display: flex;
     flex-direction: column;
-    gap: 42px; */
+    gap: 42px; 
     max-width:710px;
 }
 
