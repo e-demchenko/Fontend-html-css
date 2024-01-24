@@ -35,6 +35,8 @@
 --brand-color: #819B57;
 --brand-dark-color:#31261A;
 --brand-light-color: #FAF4EA;
+--brand-light-green: #CFCFBC;
+--brand-layout: #A18268;
 }
 /* Base */
 * {
@@ -49,6 +51,7 @@ body{
     font-weight: 400;
     line-height: 1.5;
     margin: 0;
+    background-color: var(--brand-light-color);
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -81,6 +84,7 @@ h1{
 
 h1 span{
     color:var(--brand-color);
+    text-align: center; 
 }
 
 header{
@@ -90,8 +94,11 @@ header{
 /* Header section */
 .hero-section{
     padding: 272px 0;  
-    text-align: center;
-}
+    background-image: url(../images/cuple\ in\ backery.jpg);
+    background-repeat: no-repeat;background-position: center top;
+    background-size: contain;
+    /* background-attachment: fixed; */
+} 
 
 .header-container{
     display: flex;
@@ -119,9 +126,10 @@ header{
     margin: 0 auto;
     padding: 0 24px;
 }
-.section{
+
+/* .section{
     padding: 48px 0;
-}
+} */
 
 .section:nth-child(3){
     padding-top: 96px;
@@ -191,6 +199,10 @@ header{
     color:rgba(49, 38, 26, 1);
 }
 
+.section-title.centered{
+    text-align: center;
+}
+
 /* Traditions section */
 .tradition-section{
     padding-top: 96px;
@@ -229,23 +241,55 @@ header{
     font-weight: 600;
 }
 /* Chif section */
-.chef-title{
-    margin-bottom: 16px;
+.chefs-title{
+    margin: 0 auto 80px;
     font-weight: 600;
     font-size: 40px;
+    max-width: 520px;
 }
 
-.chefs-title{
-    margin-bottom: 80px;    
+.chefs-title::befor,
+.chefs-title::after{
+    display: block;
+    width: 352px;
+    border: 2px solid var(--brand-light-green);
+    content: '';
 }
+
+.chefs-img{
+    border-radius: 4px 4px 4px 200px;
+    background: #D9D9D9;
+    box-shadow: 
+    -16px 16px 0 0 var(--brand-light-color),
+    -16px 16px 0 2px var(--brand-layout);
+    
+}
+
+/* .chefs-title{
+    margin-bottom: 80px;    
+} */
 
 /* Forman section */
+.format-card-walrus{
+    background-image: url(../images/Walrus.jpg);
+}
+
+.format-card-horsshoe{
+    background-image: url(../images/Horsesoe.jpg);  
+}
+
+.format-card-handlebar{
+    background-image: url(../images/Handlebar.jpg);  
+}
 .format-card{
     border: 1px solid var(--brand-dark-color);
     border-radius: 16px;
     padding: 24px;
     max-width: 349px;
     height: 444px;
+    background-image: linear-gradient(180deg, rgba(49, 38, 26, 0.00) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261A 100%);
+
+
 }
 
 .formats-list{
@@ -271,14 +315,19 @@ header{
     flex-basis: calc((100%-40px)/3);
 }
 
-
-
 /* Contact section */
 
 .contacts-title{
     margin-bottom: 16px;
 }
 /* Footer */
+.footer{
+    background-image: url(../images/Footer.png);
+    background-color: #31261A;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 .address-link{
     font-size: 16px;
     font-weight: 300;
