@@ -1,8 +1,3 @@
-<!--  
-    Master code https://github.com/genius-space/genius-lesson-project/blob/main/index.html
-
-   https://edu.genius.space/uk/courses/htmlcss/module/modul8/lesson/modul8
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +22,7 @@
                </ul>
             </nav>
         
-            <button class="order-call-button">
+            <button class="order-call-button modal-btn-open">
                 Order call
             </button>
         </div>
@@ -68,27 +63,33 @@
         </section>
         <section  class="section" id = "cokers-section">
             <div class="container">
-                <h2 class = "section-title chefs-title centered">Our best highlights
-                    chef-cook</h2>
-                    <ul>
-                        <li>
-                            <article>
+                <h2 class = "section-title chefs-title centered">Наші найкращі <br/>
+                    шеф -кухарі
+                </h2>
+                    <ul class="chefs-list">
+                        <li class="chef-item">
+                            <article class="chefs-card">
                                 <img class="chefs-img" src="/images/nastya-chef.jpg"/>
-                                <h3 class="chef-title">Nastya</h3>
-                                <p>Hello, I'm Nastya!</p>
-                                <p>For 10 years, I've been lighting interesting and tasty ideas in life.</p>               
-                                <p>I will bake for you
-                                    the most delicious products!</p>
+                                <div>
+                                    <h3 class="chef-title">Настя</h3>
+                                    <div class="chef-text">
+                                        <p >Привіт, я Настя!</p>
+                                        <p >Вже 10 років, я втілюю<br> 
+                                            у життя цікаві та смачні ідеї.</p>               
+                                            <p >Я          випічу для вас<br> найсмачніщі вироби!</p>
+                                    </div>
+                                </div>
                             </article>
                         </li>
-                        <li>
-                            <article>
+                        <li class="chef-item">
+                            <article class="chefs-card">
                                 <img class="chefs-img" src="/images/vlad-chef.jpg" alt="vlad-chef"/>
-                                <h3 class="chef-title">Vlad</h3>
-                                <p>Hello, I'm Vlad!</p>
-                                <p>I have 18 years of coding experience.
-                                SHOP BAKERY is our love, which we share with you every time through our pastries!</p>
-                                    <p>I will make a unique filling for you for any taste!</p>
+                                <div>
+                                    <h3 class="chef-title">Влад</h3>
+                                    <p class="chef-text">Привіт, я Влад!</p>
+                                    <p class="chef-text">Мій кодитерський стаж вже 18 років.SHOP BEKERY - це наша любов, з якою ми ділимось кожен раз з Вами через нашу випічку!</p>
+                                    <p class="chef-text">Я зроблю для вас унікальну начинку на будь який смак!</p>
+                                </div>
                             </article>
                         </li>
                     </ul>
@@ -97,6 +98,7 @@
         <section class="section" id = "formats-section">
             <div class="container">
                 <h2 class = "section-title formats-title centered">Formats</h2>
+               <div class="formats-container">
                 <button class="format-button-arrow" type="button">
                     <svg width="16px" height="16px">
                         <use href="/images/symbol-defs.svg#icon-arrow"></use>
@@ -142,61 +144,84 @@
                         <use href="/images/symbol-defs.svg#icon-arrow"></use>
                     </svg>
                 </button>
+               </div>
             </div>
         </section>
-        <section class="section" id = "contacts-section">
+        <section class="contacts-section section" id = "contacts-section">
             <div class="container">
-                <h2 class = "section-title contacts-title">Come to
-                    bakery lines
-                </h2>
-                <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10160.65337575621!2d30.480933770495273!3d50.45668290682464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2sno!4v1704998920971!5m2!1sru!2sno" width="603" height="595" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="contact-container">
+                    <div class="contact-form">
+                    <h2 class = "section-title contacts-title">Приєднуйся до 
+                        мережі пекарень
+                    </h2>
+                    <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+                    <!-- Contact-form -->
+                
+                    
+                        <!-- form -->
+                    </div>
+                <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10160.65337575621!2d30.480933770495273!3d50.45668290682464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2sno!4v1704998920971!5m2!1sru!2sno" width="603" height="595" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
             </div> 
         </section>       
     </main>
     <footer class="footer">
         <div class="container">
-            <nav>
-                <a href= "./index.html">
-                    <img src="./images/logo.svg" alt="logo Modern bakery">
-                </a>
-               <ul>
-                    <li><a class="nav-link" href= "#trditions-section">Over traditions</a></li>
-                    <li><a class="nav-link" href= "#cokers-section">Chef-cook</a></li>
-                    <li><a class="nav-link" href= "#formats-section">Formats</a></li>
-                    <li><a class="nav-link" href= "#contacts-section">Contacts</a></li>
-               </ul>
-            </nav>
-            <address>
-                <ul>
-                    <li>
-                        <a class = "address-link" href="tel:+380960000007">+ 38 (096) 000 00 07</a>
-                    </li>
-                    <li>
-                        <a class = "address-link" href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>
-                    </li>
-                    <li>
-                        <a class = "address-link" href="https://maps.app.goo.gl/UxQ6rwQ8uPbaY9ux9" target="_blank">
-                            Ukraine, m. Kiev,
-                            vul. Sichov Striltsiv 54</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <svg class="address-icon" width="32px" height="32px">
-                                <use href="/images/symbol-defs.svg#icon-facebook"></use>
-                            </svg>
+           <div class="footer-container">
+                <nav class="footer-nav">
+                    <div class="footer-logo">
+                        <a href= "./index.html">
+                            <img src="./images/logo.svg" alt="logo Modern bakery">
                         </a>
-                        <a href="#">
-                            <svg class="address-icon" width="32px" height="32px">
-                                <use href="/images/symbol-defs.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
+                    </div>
+                    
+                <ul class="footer-menu">
+                        <li><a class="nav-link" href= "#trditions-section">Over traditions</a></li>
+                        <li><a class="nav-link" href= "#cokers-section">Chef-cook</a></li>
+                        <li><a class="nav-link" href= "#formats-section">Formats</a></li>
+                        <li><a class="nav-link" href= "#contacts-section">Contacts</a></li>
                 </ul>
-                <a class="address-link" href="#" target="_blank">Privacy Policy</a>
-                <p class="address-copyright">&copy; Data is protected</p>
-            </address>    
+                </nav>
+                <address class="footer-address">
+                    <ul class="address-list">
+                        <li>
+                            <a class = "address-link" href="tel:+380960000007">+ 38 (096) 000 00 07</a>
+                        </li>
+                        <li>
+                            <a class = "address-link" href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>
+                        </li>
+                        <li>
+                            <a class = "address-link" href="https://maps.app.goo.gl/UxQ6rwQ8uPbaY9ux9" target="_blank">
+                                Ukraine, m. Kiev,
+                                vul. Sichov Striltsiv 54</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="address-icon" width="32px" height="32px">
+                                    <use href="/images/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg class="address-icon" width="32px" height="32px">
+                                    <use href="/images/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="address-info">
+                        <a class="address-link" href="#" target="_blank">Privacy Policy</a>
+                    <p class="address-copyright">&copy; Data is protected</p>
+                    </div>
+                </address>   
+           </div> 
         </div>
     </footer>
+    <div class="backdrop">
+        <div class="modal">
+            <button class="modal-btn-close" type="button" >close</button>
+        </div>
+    </div>
+   <script src="/modal.js" ></script>
 </body>
 </html>
