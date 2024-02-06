@@ -1,3 +1,6 @@
+<!-- 
+    https://edu.genius.space/uk/courses/htmlcss/module/modul14/lesson/modul14
+    -36:36 Оформление формы  -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -156,8 +159,32 @@
                     </h2>
                     <p>Заповни форму, щоб ми звʼязались з тобою!</p>
                     <!-- Contact-form -->
+                    <form name="contact-form" novalidate autocomplete="off">
                 
-                    
+                
+                        <div class="form-field">
+                            <label class="form-label advantages-hide" for="user-name">Имя</label>
+                            <input class="form-input" type="text" name="user-name" id="user-name"
+                            placeholder="Имя">
+                        </div>
+        
+                        <div class="form-field">
+                            <label class="form-label advantages-hide" for="uer-tel">Телефон</label>
+                            <input class="form-input" type="tel" name="uer-tel" id="uer-tel"
+                            placeholder="Телефон">
+                        </div>
+        
+                        <div class="form-field">
+                            <label class="form-label advantages-hide" for="user-email">Електронная почта</label>
+                            <input class="form-input" type="email" name="user-email" id="user-email"
+                            placeholder="Електронная почта">
+                        </div>
+        
+                        <button class="order-call-button form-button" type="submit">Заказать звонок</button>
+        
+                        <p class="form-terms">Нажимая на кнопку я соглашаюсь с <a class="terms-link" href="#">политикой конфиденциальности</a></p>
+                        
+                    </form>
                         <!-- form -->
                     </div>
                 <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10160.65337575621!2d30.480933770495273!3d50.45668290682464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2sno!4v1704998920971!5m2!1sru!2sno" width="603" height="595" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
@@ -217,10 +244,40 @@
            </div> 
         </div>
     </footer>
-    <div class="backdrop is-hidden">
+    <div class="backdrop">
         <div class="modal">
             <button class="modal-btn-close" type="button" >close</button>
+            <h2>Замовити дзвiнок</h2>
+            <p>Залишiть заявку та наш спецiалiст зв'яжеться з Вами</p>
+
+            <form name="contact-form" novalidate autocomplete="off">
+                
+                
+                <div class="form-field">
+                    <label class="form-label advantages-hide" for="user-name">Имя</label>
+                    <input class="form-input" type="text" name="user-name" id="user-name"
+                    placeholder="Имя">
+                </div>
+
+                <div class="form-field">
+                    <label class="form-label advantages-hide" for="uer-tel">Телефон</label>
+                    <input class="form-input" type="tel" name="uer-tel" id="uer-tel"
+                    placeholder="Телефон">
+                </div>
+
+                <div class="form-field">
+                    <label class="form-label advantages-hide" for="user-email">Електронная почта</label>
+                    <input class="form-input" type="email" name="user-email" id="user-email"
+                    placeholder="Електронная почта">
+                </div>
+
+                <button class="order-call-button form-button" type="submit">Заказать звонок</button>
+
+                <p class="form-terms">Нажимая на кнопку я соглашаюсь с <a class="terms-link" href="#">политикой конфиденциальности</a></p>
+                
+            </form>
         </div>
+        
     </div>
    <script src="/modal.js" ></script>
 </body>
