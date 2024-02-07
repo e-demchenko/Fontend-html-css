@@ -1,0 +1,32 @@
+.nav-link{
+    color: #FAF4EA;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: var(--brand-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.address-link{
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--brand-light-color);
+}
+
+.address-link:hover{
+   color:var(--brand-color)
+}
+
+.terms-link{
+    color: var(--brand-dark-color);
+    text-underline-offset: 2px;
+}
+
+.header-links{
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: center;
+}

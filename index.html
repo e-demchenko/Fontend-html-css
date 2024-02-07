@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modern bakery</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <header>
@@ -41,7 +41,7 @@
         </section>
         <section class="section advantages-section">
             <div class="container">
-                <h2 class="advantages-hide">Advantages</h2>
+               <h2 class="visually-hidden">Advantages</h2>
                 <ul class="adventages-list">
                     <li class = "advantages-items">The great one will drink to the market</li>
                     <li class = "advantages-items">Available in budget formats</li>
@@ -108,8 +108,9 @@
                     </svg>
                 </button>
             <ul class="formats-list">
-                <li class="formay-items">
+                <li class="format-items">
                     <article class="format-card format-card-walrus">
+                        <img class="format-image" src="./images/Walrus.jpg" alt="Walrus">
                         <h3 class = "format-title">Walrus</h3>
                         <div class = "forman-text">
                             <p>Площа: до 120 м2</p>
@@ -119,8 +120,9 @@
                         </div>
                     </article>
                 </li>
-                <li class="formay-items">
+                <li class="format-items">
                     <article class="format-card format-card-horsshoe">
+                        <img class="format-image" src="./images/Horsesoe.jpg" alt="Horsshoe">
                         <h3 class = "format-title">Horsshoe</h3>
                         <div class = "forman-text">
                             <p>Площа: до 25 м2</p>
@@ -130,8 +132,9 @@
                         </div>
                     </article>
                 </li>
-                <li class="formay-items">
+                <li class="format-items">
                     <article class="format-card format-card-handlebar">
+                        <img class="format-image" src="./images/Handlebar.jpg" alt="Handlebar">
                         <h3 class = "format-title">Handlebar</h3>
                         <div class = "forman-text">
                         <p>Площа: до 15 м2</p>
@@ -159,25 +162,28 @@
                     </h2>
                     <p>Заповни форму, щоб ми звʼязались з тобою!</p>
                     <!-- Contact-form -->
-                    <form name="contact-form" novalidate autocomplete="off">
+                    <form name="contact-form" autocomplete="off">
                 
                 
                         <div class="form-field">
-                            <label class="form-label advantages-hide" for="user-name">Имя</label>
+                            <label class="form-label visually-hidden" for="user-name">Имя</label>
                             <input class="form-input" type="text" name="user-name" id="user-name"
-                            placeholder="Имя">
+                            placeholder="Имя"
+                            required>
                         </div>
         
                         <div class="form-field">
-                            <label class="form-label advantages-hide" for="uer-tel">Телефон</label>
+                            <label class="form-label visually-hidden" for="uer-tel">Телефон</label>
                             <input class="form-input" type="tel" name="uer-tel" id="uer-tel"
-                            placeholder="Телефон">
+                            placeholder="Телефон"
+                            required>
                         </div>
         
                         <div class="form-field">
-                            <label class="form-label advantages-hide" for="user-email">Електронная почта</label>
+                            <label class="form-label visually-hidden" for="user-email">Електронная почта</label>
                             <input class="form-input" type="email" name="user-email" id="user-email"
-                            placeholder="Електронная почта">
+                            placeholder="Електронная почта"
+                            required>
                         </div>
         
                         <button class="order-call-button form-button" type="submit">Заказать звонок</button>
@@ -244,8 +250,8 @@
            </div> 
         </div>
     </footer>
-    <div class="backdrop">
-        <div class="modal">
+    <div class="backdrop visually-hidden">
+        <div class="modal ">
             <button class="modal-btn-close" type="button" >close</button>
             <h2>Замовити дзвiнок</h2>
             <p>Залишiть заявку та наш спецiалiст зв'яжеться з Вами</p>
@@ -254,19 +260,19 @@
                 
                 
                 <div class="form-field">
-                    <label class="form-label advantages-hide" for="user-name">Имя</label>
+                    <label class="form-label visually-hidden" for="user-name">Имя</label>
                     <input class="form-input" type="text" name="user-name" id="user-name"
                     placeholder="Имя">
                 </div>
 
                 <div class="form-field">
-                    <label class="form-label advantages-hide" for="uer-tel">Телефон</label>
+                    <label class="form-label visually-hidden" for="uer-tel">Телефон</label>
                     <input class="form-input" type="tel" name="uer-tel" id="uer-tel"
                     placeholder="Телефон">
                 </div>
 
                 <div class="form-field">
-                    <label class="form-label advantages-hide" for="user-email">Електронная почта</label>
+                    <label class="form-label visually-hidden" for="user-email">Електронная почта</label>
                     <input class="form-input" type="email" name="user-email" id="user-email"
                     placeholder="Електронная почта">
                 </div>

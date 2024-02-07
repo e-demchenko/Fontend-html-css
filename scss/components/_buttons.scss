@@ -1,0 +1,47 @@
+.order-call-button:hover{
+    background-color: gray;
+ }
+
+ .format-button-arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border-radius: 50%;
+    fill: var(--brand-dark-color);
+    background-color: transparent;
+    border: 1px solid var(--brand-dark-color);
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.format-button-arrow.next{
+    transform: rotate(180deg);
+}
+
+.format-button-arrow:hover{
+    background-color: var(--brand-dark-color);
+    fill: var(--brand-light-color);
+    flex-shrink: 0;
+}
+
+.form-button{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+.order-call-button{
+    width: 238px;
+    height: 59px;
+    border:  2px;
+    border-radius: 8px;
+    padding: 16px 32px ;
+
+    background-color:var(--brand-color) ;
+    font-weight: 600;
+    font: Poppins;
+    color: #FAF4EA;
+ }
