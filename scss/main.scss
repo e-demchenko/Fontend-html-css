@@ -10,28 +10,11 @@
 @import'./components/header';
 @import'./components/hero-section';
 
+@import'./layouts/container';
 
 
 
 
-
-.nav-class{
-    display: flex;
-    flex-grow: 1;
-    align-items: center;
-    gap: 40px;
-}
-
-.container{
-    width: 100%;
-    max-width: 1288px;
-    margin: 0 auto;
-    padding: 0 24px;
-}
-
-.section:nth-child(3){
-    padding-top: 96px;
-}
  /* Adventages section */
  .advantages-section{
     background-color: var(--brand-color);
@@ -57,9 +40,7 @@
     color:rgba(49, 38, 26, 1);
 }
 
-.section-title.centered{
-    text-align: center;
-}
+
 
 /* Traditions section */
 .tradition-section{
@@ -170,11 +151,7 @@ margin-top: 0;
 
 /* Forman section */
 
-.formats-container{
-display: flex;
-gap: 32px;
-align-items: center;
-}
+
 
 // .format-card-walrus{
 //     background-image: url(../images/Walrus.jpg);
